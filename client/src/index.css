@@ -3,12 +3,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --teal: #1D9E75;
-  --teal-light: #E1F5EE;
-  --teal-dark: #0F6E56;
-  --navy: #042C53;
-  --blue: #185FA5;
-  --blue-light: #E6F1FB;
+  --teal: #6AAEB4;
+  --teal-light: #E0F2F5;
+  --teal-dark: #4A8A92;
+  --navy: #2a2a2a;
+  --blue: #6AAEB4;
+  --blue-light: #E0F2F5;
   --gray: #7A7A78;
   --gray-light: #F2F3F4;
   --gray-dark: #3A3A38;
@@ -98,7 +98,7 @@ input, textarea, select { font-family: var(--font); }
 
 /* ===== AUTH ===== */
 .auth-wrap { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
-.auth-left { background: linear-gradient(160deg, #4A7A8A 0%, #2C5F6E 60%, var(--navy) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem; position: relative; overflow: hidden; }
+.auth-left { background: linear-gradient(160deg, #6AAEB4 0%, #4A8A92 60%, #5A9BA6 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem; position: relative; overflow: hidden; }
 .auth-left::before { content:''; position:absolute; top:-60px; right:-60px; width:240px; height:240px; border-radius:50%; background:rgba(255,255,255,0.05); }
 .auth-left::after { content:''; position:absolute; bottom:-40px; left:-40px; width:180px; height:180px; border-radius:50%; background:rgba(255,255,255,0.04); }
 .auth-right { background: var(--white); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem; }
@@ -177,14 +177,14 @@ input, textarea, select { font-family: var(--font); }
 .text-navy { color: var(--navy); }
 
 /* ===== HOME PAGE ===== */
-.hero-section { background: linear-gradient(135deg, var(--navy) 0%, #0a4a7a 50%, #0F6E56 100%); color: white; padding: 6rem 2rem 5rem; position: relative; overflow: hidden; }
+.hero-section { background: linear-gradient(135deg, #6AAEB4 0%, #4A8A92 50%, #6AAEB4 100%); color: white; padding: 6rem 2rem 5rem; position: relative; overflow: hidden; }
 .hero-section::before { content:''; position:absolute; top:0; left:0; right:0; bottom:0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 .hero-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 1; }
 .hero-title { font-family: var(--font-serif); font-size: 50px; line-height: 1.12; margin-bottom: 1.2rem; letter-spacing: -0.5px; }
-.hero-title .accent { color: #7FD9BB; }
+.hero-title .accent { color: #ffffff; }
 .hero-desc { font-size: 16px; opacity: 0.82; line-height: 1.75; margin-bottom: 2rem; max-width: 420px; }
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn-hero-primary { background: var(--teal); color: white; padding: 13px 30px; border-radius: 10px; font-size: 15px; font-weight: 700; border: none; cursor: pointer; font-family: var(--font); transition: all 0.15s; box-shadow: 0 4px 20px rgba(29,158,117,0.4); }
+.btn-hero-primary { background: var(--teal); color: white; padding: 13px 30px; border-radius: 10px; font-size: 15px; font-weight: 700; border: none; cursor: pointer; font-family: var(--font); transition: all 0.15s; box-shadow: 0 4px 20px rgba(106,174,180,0.4); }
 .btn-hero-primary:hover { background: var(--teal-dark); transform: translateY(-2px); }
 .btn-hero-outline { background: transparent; color: white; padding: 13px 30px; border-radius: 10px; font-size: 15px; font-weight: 600; border: 2px solid rgba(255,255,255,0.4); cursor: pointer; font-family: var(--font); transition: all 0.15s; }
 .btn-hero-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
@@ -195,7 +195,7 @@ input, textarea, select { font-family: var(--font); }
 .hero-card-value { font-size: 22px; font-weight: 700; font-family: var(--font-serif); }
 .hero-stat-row { display: flex; gap: 12px; }
 .hero-stat { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px; text-align: center; }
-.hero-stat-num { font-size: 24px; font-weight: 700; font-family: var(--font-serif); color: #7FD9BB; }
+.hero-stat-num { font-size: 24px; font-weight: 700; font-family: var(--font-serif); color: #ffffff; }
 .hero-stat-label { font-size: 11px; opacity: 0.65; margin-top: 2px; }
 
 .section-wrap { max-width: 1140px; margin: 0 auto; padding: 4rem 2rem; }
@@ -216,9 +216,9 @@ input, textarea, select { font-family: var(--font); }
 .feature-title { font-weight: 700; font-size: 15px; color: var(--navy); margin-bottom: 6px; }
 .feature-desc { font-size: 13px; color: var(--gray); line-height: 1.65; }
 
-.alt-section { background: var(--navy); color: white; }
-.alt-section .section-title { color: white; }
-.alt-section .section-desc { color: rgba(255,255,255,0.7); }
+.alt-section { background: #f5f5f5; color: #333; }
+.alt-section .section-title { color: #333; }
+.alt-section .section-desc { color: #666; }
 
 .compat-bar { background: linear-gradient(90deg,#E24B4A,#EF9F27,#639922,#1D9E75); height: 12px; border-radius: 6px; position: relative; margin: 1rem 0; }
 .compat-labels { display: flex; justify-content: space-between; font-size: 11px; opacity: 0.7; }
@@ -253,7 +253,7 @@ input, textarea, select { font-family: var(--font); }
 .faq-q { padding: 1rem 1.25rem; font-weight: 600; font-size: 14.5px; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
 .faq-a { padding: 0 1.25rem 1rem; font-size: 13.5px; color: var(--gray-dark); line-height: 1.7; }
 
-.footer-section { background: var(--navy); color: white; padding: 3rem 2rem 2rem; margin-top: 0; }
+.footer-section { background: #6AAEB4; color: white; padding: 3rem 2rem 2rem; margin-top: 0; }
 .footer-inner { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 2rem; }
 .footer-brand { font-family: var(--font-serif); font-size: 22px; color: white; margin-bottom: 10px; }
 .footer-tagline { font-size: 13px; opacity: 0.6; line-height: 1.6; margin-bottom: 1rem; }

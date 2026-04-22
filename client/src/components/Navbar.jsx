@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -13,8 +14,8 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/" style={{fontFamily:'var(--font-serif)',fontSize:19,fontWeight:700,color:'var(--navy)',letterSpacing:'-0.3px'}}>
-          M21 <span style={{color:'var(--teal)'}}>Matchmaking</span>
+        <Link to="/">
+          <img src={logo} alt="M21 Matchmaking" style={{height: 40, width: 'auto'}} />
         </Link>
       </div>
 
@@ -42,7 +43,7 @@ export default function Navbar() {
                 <span style={{maxWidth:90,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>{user.name}</span>
               </button>
             </Link>
-            <button className="btn btn-sm" style={{background:'var(--navy)',color:'white',border:'none'}} onClick={handleLogout}>Log Out</button>
+            <button className="btn btn-sm" style={{background:'#6AAEB4',color:'white',border:'none'}} onClick={handleLogout}>Log Out</button>
           </div>
         </>
       ) : (

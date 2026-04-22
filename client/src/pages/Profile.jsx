@@ -73,7 +73,7 @@ export default function Profile() {
           <div style={{fontFamily:'var(--font-serif)',fontWeight:600,fontSize:16,color:'var(--navy)'}}>{form.name||user?.name}</div>
           <div style={{fontSize:12.5,color:'var(--gray)',marginTop:3}}>{form.email||user?.email}</div>
           {form.location && <div style={{fontSize:12,color:'var(--teal-dark)',marginTop:6,fontWeight:500}}>📍 {form.location}</div>}
-          {user?.isAdmin && <span className="badge" style={{marginTop:10,display:'inline-block',background:'var(--navy)',color:'white'}}>Admin</span>}
+          {user?.isAdmin && <span className="badge" style={{marginTop:10,display:'inline-block',background:'#6AAEB4',color:'white'}}>Admin</span>}
           {form.isVerified && <div style={{fontSize:11,color:'var(--teal-dark)',fontWeight:600,marginTop:8}}>✓ Verified</div>}
         </div>
 

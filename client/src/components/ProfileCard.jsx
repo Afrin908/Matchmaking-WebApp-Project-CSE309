@@ -24,7 +24,7 @@ export default function ProfileCard({ user, actionButton }) {
           {user.gender      && <span className="tag">{user.gender}</span>}
           {user.maritalStatus && <span className="tag tag-blue">{user.maritalStatus}</span>}
           {user.education   && <span className="tag tag-gray">{user.education}</span>}
-          {user.isVerified  && <span className="tag" style={{background:'#E6F1FB',color:'var(--blue)'}}>✓ Verified</span>}
+          {user.isVerified  && <span className="tag" style={{background:'#E0F2F5',color:'#6AAEB4'}}>✓ Verified</span>}
         </div>
         {actionButton && (
           <div style={{marginTop:10}} onClick={e=>e.stopPropagation()}>{actionButton}</div>

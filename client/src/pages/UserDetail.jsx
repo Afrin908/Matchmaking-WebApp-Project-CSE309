@@ -101,11 +101,11 @@ export default function UserDetail() {
             <div style={{fontFamily:'var(--font-serif)',fontSize:18,fontWeight:600,color:'var(--navy)',marginBottom:'0.75rem'}}>Compatibility Rating</div>
             <p style={{fontSize:13,color:'var(--gray)',marginBottom:'0.75rem'}}>Profile alignment based on shared values, location, and background.</p>
             <div style={{background:'var(--bg)',borderRadius:'var(--radius-sm)',padding:14}}>
-              <div style={{height:12,borderRadius:6,background:'linear-gradient(90deg,#E24B4A,#EF9F27,#EACC1A,#639922,#1D9E75)',position:'relative',marginBottom:8}}>
-                <div style={{position:'absolute',top:-5,left:'65%',width:3,height:22,background:'var(--navy)',borderRadius:2,boxShadow:'0 0 0 3px rgba(4,44,83,0.15)'}}></div>
+              <div style={{height:12,borderRadius:6,background:'linear-gradient(90deg,#E24B4A,#EF9F27,#EACC1A,#639922,#6AAEB4)',position:'relative',marginBottom:8}}>
+                <div style={{position:'absolute',top:-5,left:'65%',width:3,height:22,background:'#6AAEB4',borderRadius:2,boxShadow:'0 0 0 3px rgba(106,174,180,0.15)'}}></div>
               </div>
               <div style={{display:'flex',justifyContent:'space-between',fontSize:11,color:'var(--gray)'}}>
-                <span>Ingredient</span><span>Culinary</span><span>Premium</span><span style={{color:'var(--teal-dark)',fontWeight:700}}>Ceremonial</span>
+                <span>Ingredient</span><span>Culinary</span><span>Premium</span><span style={{color:'#6AAEB4',fontWeight:700}}>Ceremonial</span>
               </div>
             </div>
           </div>

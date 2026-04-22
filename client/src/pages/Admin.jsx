@@ -76,7 +76,7 @@ export default function Admin() {
                   <td style={{padding:'10px 12px'}}>{u.location||'—'}</td>
                   <td style={{padding:'10px 12px'}}>
                     {u.isAdmin
-                      ? <span className="badge" style={{background:'var(--navy)',color:'white'}}>Admin</span>
+                      ? <span className="badge" style={{background:'#6AAEB4',color:'white'}}>Admin</span>
                       : u.isActive
                         ? <span className="badge badge-accepted">Active</span>
                         : <span className="badge badge-rejected">Suspended</span>

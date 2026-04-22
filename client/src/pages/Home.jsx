@@ -30,7 +30,7 @@ export default function Home() {
       <div className="hero-section">
         <div className="hero-inner">
           <div>
-            <p style={{fontSize:13,fontWeight:600,color:'#7FD9BB',textTransform:'uppercase',letterSpacing:'.1em',marginBottom:12}}>Bangladesh's Trusted Matchmaking Platform</p>
+            <p style={{fontSize:13,fontWeight:600,color:'#ffffff',textTransform:'uppercase',letterSpacing:'.1em',marginBottom:12}}>Bangladesh's Trusted Matchmaking Platform</p>
             <h1 className="hero-title">Find Your <span className="accent">Perfect Life</span> Partner</h1>
             <p className="hero-desc">A structured, secure, and modern approach to finding a compatible spouse. Verified profiles, smart search, and private messaging — all in one place.</p>
             <div className="hero-cta">
@@ -61,7 +61,7 @@ export default function Home() {
                       <div style={{fontSize:13,fontWeight:600,color:'white'}}>{p.name}</div>
                       <div style={{fontSize:11,opacity:.6}}>{p.age} · {p.location}</div>
                     </div>
-                    <div style={{marginLeft:'auto',fontSize:11,background:'rgba(127,217,187,0.2)',color:'#7FD9BB',padding:'3px 9px',borderRadius:20,fontWeight:600}}>Active</div>
+                    <div style={{marginLeft:'auto',fontSize:11,background:'rgba(106,174,180,0.2)',color:'#6AAEB4',padding:'3px 9px',borderRadius:20,fontWeight:600}}>Active</div>
                   </div>
                 ))}
               </div>
@@ -145,17 +145,17 @@ export default function Home() {
       </div>
 
       {/* ── 5. COMPATIBILITY ── */}
-      <div style={{background:'var(--navy)'}}>
+      <div style={{background:'#f5f5f5'}}>
         <div className="section-wrap alt-section">
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'3rem',alignItems:'center'}}>
             <div>
-              <p className="section-label" style={{color:'#7FD9BB'}}>Our Algorithm</p>
+              <p className="section-label" style={{color:'#6AAEB4'}}>Our Algorithm</p>
               <h2 className="section-title">Understand Compatibility Grades</h2>
               <p className="section-desc">We rate how well two profiles align based on shared values, location, education and background.</p>
               <div style={{marginTop:'1rem'}}>
                 <div className="compat-bar"></div>
                 <div className="compat-labels">
-                  <span>Ingredient</span><span>Culinary</span><span>Premium</span><span style={{color:'#7FD9BB',fontWeight:600}}>Ceremonial</span>
+                  <span>Ingredient</span><span>Culinary</span><span>Premium</span><span style={{color:'#6AAEB4',fontWeight:600}}>Ceremonial</span>
                 </div>
               </div>
             </div>
