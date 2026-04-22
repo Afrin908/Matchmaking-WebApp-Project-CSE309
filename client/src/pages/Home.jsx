@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/logo.png';
 
 const PREVIEW_PROFILES = [
   { name:'Anika Rahman',    age:23, location:'Dhaka',      photo:'https://randomuser.me/api/portraits/women/11.jpg' },
@@ -68,6 +69,26 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* ── 1.5 LOGO SHOWCASE ── */}
+      <div style={{background:'linear-gradient(180deg, #ffffff 0%, #f0f9fb 100%)',padding:'4rem 2rem',textAlign:'center',position:'relative',overflow:'hidden'}}>
+        <div style={{position:'relative',width:'100%',height:'350px',display:'flex',alignItems:'center',justifyContent:'center',maxWidth:'1140px',margin:'0 auto'}}>
+          {/* Decorative floating elements */}
+          <div style={{position:'absolute',width:16,height:16,borderRadius:'50%',background:'#6AAEB4',top:30,left:'10%',animation:'float 3s ease-in-out infinite'}}></div>
+          <div style={{position:'absolute',width:12,height:12,borderRadius:'50%',background:'#4A8A92',top:50,right:'15%',animation:'float 4s ease-in-out infinite 0.5s'}}></div>
+          <div style={{position:'absolute',width:14,height:14,borderRadius:'50%',background:'#6AAEB4',bottom:40,left:'12%',animation:'float 3.5s ease-in-out infinite 1s'}}></div>
+          <div style={{position:'absolute',width:10,height:10,borderRadius:'50%',background:'#4A8A92',bottom:50,right:'10%',animation:'float 4.5s ease-in-out infinite 1.5s'}}></div>
+          <div style={{position:'absolute',fontSize:32,color:'#6AAEB4',top:20,right:'20%',animation:'float 3.8s ease-in-out infinite 0.2s'}}>+</div>
+          <div style={{position:'absolute',fontSize:28,color:'#6AAEB4',bottom:30,right:'25%',animation:'float 4.2s ease-in-out infinite 1.2s'}}>✓</div>
+          <div style={{position:'absolute',fontSize:36,color:'#6AAEB4',top:'40%',left:'8%',animation:'float 3.3s ease-in-out infinite 0.8s'}}>◆</div>
+          <div style={{position:'absolute',width:18,height:18,borderRadius:'50%',background:'#6AAEB4',top:'60%',right:'18%',animation:'float 4.8s ease-in-out infinite 0.3s',opacity:0.6}}></div>
+          
+          {/* Center Logo */}
+          <img src={logo} alt="Matchmaking" style={{height:280,width:'auto',position:'relative',zIndex:2,filter:'drop-shadow(0 10px 30px rgba(106,174,180,0.2))'}} />
+        </div>
+        <h2 style={{fontSize:28,fontWeight:700,color:'#2a2a2a',marginTop:'1rem',fontFamily:'var(--font-serif)',letterSpacing:'-0.5px'}}>Matchmaking</h2>
+        <p style={{fontSize:15,color:'var(--gray)',marginTop:'0.5rem',maxWidth:500,margin:'0.5rem auto 0'}}>Your trusted partner in finding true love. Secure, verified, and designed for meaningful connections.</p>
       </div>
 
       {/* ── 2. HOW IT WORKS ── */}
@@ -254,7 +275,7 @@ export default function Home() {
       <div className="footer-section">
         <div className="footer-inner">
           <div>
-            <div className="footer-brand">M21 Matchmaking</div>
+            <div className="footer-brand">Matchmaking</div>
             <div className="footer-tagline">Bangladesh's trusted platform for finding a life partner in a secure, modern way.</div>
             <div style={{fontSize:13,opacity:.5}}>📧 Tisha@iub.edu.bd &nbsp;|&nbsp; 📞 0123456789</div>
           </div>
@@ -285,8 +306,8 @@ export default function Home() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 M21 Matchmaking. All rights reserved.</span>
-          <span>Made with ♥ for IUB CSE 309</span>
+          <span>© 2026 Matchmaking. All rights reserved.</span>
+          <span>IUB CSE 309 Project 2026, Faculty : Abu Sayed </span>
         </div>
       </div>
     </div>

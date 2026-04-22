@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/">
-          <img src={logo} alt="M21 Matchmaking" style={{height: 40, width: 'auto'}} />
+          <img src={logo} alt="Matchmaking" style={{height: 40, width: 'auto'}} />
         </Link>
       </div>
 
